@@ -141,6 +141,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZ6-fz-WbF">
                                 <rect key="frame" x="266" y="452" width="68" height="64"/>
                                 <state key="normal" title="Button" image="cameraImage"/>
+                                <connections>
+                                    <action selector="cameraButtonTapped:" destination="DeK-bt-L5X" eventType="touchUpInside" id="rvC-PL-Twl"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P2s-aG-DgJ">
                                 <rect key="frame" x="174" y="102" width="253" height="325"/>
@@ -172,6 +175,9 @@
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cameraImageView" destination="P2s-aG-DgJ" id="kCF-3H-mg9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nv-Rw-alC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
