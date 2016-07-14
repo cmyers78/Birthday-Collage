@@ -13,6 +13,7 @@
 		C64F29DD1D38099800DBB64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64F29DC1D38099800DBB64B /* Assets.xcassets */; };
 		C64F29E01D38099800DBB64B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64F29DE1D38099800DBB64B /* LaunchScreen.storyboard */; };
 		C64F29E81D38216A00DBB64B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F29E71D38216A00DBB64B /* CameraViewController.swift */; };
+		C6C5DEBC1D38486700254056 /* CollageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C5DEBB1D38486700254056 /* CollageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C64F29DF1D38099800DBB64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C64F29E11D38099800DBB64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C64F29E71D38216A00DBB64B /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		C6C5DEBB1D38486700254056 /* CollageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				C64F29D71D38099800DBB64B /* ViewController.swift */,
 				C64F29E71D38216A00DBB64B /* CameraViewController.swift */,
+				C6C5DEBB1D38486700254056 /* CollageViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C5DEBC1D38486700254056 /* CollageViewController.swift in Sources */,
 				C64F29D81D38099800DBB64B /* ViewController.swift in Sources */,
 				C64F29D61D38099800DBB64B /* AppDelegate.swift in Sources */,
 				C64F29E81D38216A00DBB64B /* CameraViewController.swift in Sources */,
@@ -298,6 +302,7 @@
 				C64F29E61D38099800DBB64B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
