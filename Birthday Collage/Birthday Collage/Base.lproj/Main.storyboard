@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Your Background!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47k-gM-Y2K">
-                                <rect key="frame" x="20" y="94" width="560" height="29.5"/>
+                                <rect key="frame" x="20" y="50" width="560" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4F-eQ-RQL">
-                                <rect key="frame" x="45" y="173" width="120" height="120"/>
+                                <rect key="frame" x="45" y="129" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="SZq-ox-kwj"/>
                                     <constraint firstAttribute="height" constant="120" id="sRq-kc-KrH"/>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lht-cd-7gP">
-                                <rect key="frame" x="435" y="173" width="120" height="120"/>
+                                <rect key="frame" x="435" y="129" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="fqD-Jp-Smf"/>
                                     <constraint firstAttribute="width" constant="120" id="mdw-Iz-uWF"/>
@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PC-wR-Oe5">
-                                <rect key="frame" x="45" y="328" width="120" height="120"/>
+                                <rect key="frame" x="45" y="284" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="LSC-MS-sUE"/>
                                     <constraint firstAttribute="width" constant="120" id="OvU-Tw-ROr"/>
@@ -58,7 +58,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnB-og-ilZ">
-                                <rect key="frame" x="435" y="328" width="120" height="120"/>
+                                <rect key="frame" x="435" y="284" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="0Wc-bb-lB6"/>
                                     <constraint firstAttribute="width" constant="120" id="Va6-XL-z6x"/>
@@ -69,7 +69,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XN-hL-rZa">
-                                <rect key="frame" x="45" y="483" width="120" height="120"/>
+                                <rect key="frame" x="45" y="439" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="PKb-w2-rLs"/>
                                     <constraint firstAttribute="width" constant="120" id="ibz-yy-N9U"/>
@@ -80,7 +80,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlc-9Q-hOP">
-                                <rect key="frame" x="435" y="483" width="120" height="120"/>
+                                <rect key="frame" x="435" y="439" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="4wf-9p-aVL"/>
                                     <constraint firstAttribute="width" constant="120" id="bFf-Ll-zRW"/>
@@ -117,6 +117,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="ZV7-25-KQ5"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <segue destination="DeK-bt-L5X" kind="show" identifier="backgroundSegue" id="zp3-Of-QVs"/>
                     </connections>
@@ -137,21 +138,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V3d-IB-N0u">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZ6-fz-WbF">
+                                <rect key="frame" x="266" y="452" width="68" height="64"/>
+                                <state key="normal" title="Button" image="cameraImage"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P2s-aG-DgJ">
+                                <rect key="frame" x="174" y="102" width="253" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="325" id="I9t-fG-irl"/>
+                                    <constraint firstAttribute="width" constant="253" id="Wrt-a7-Cdp"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Your Picture!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJN-fK-658">
+                                <rect key="frame" x="20" y="50" width="560" height="29.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94825953245162964" green="0.78865510225296021" blue="0.93275314569473267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="V3d-IB-N0u" firstAttribute="leading" secondItem="np0-9o-Bsc" secondAttribute="leading" id="Edw-rx-bmF"/>
-                            <constraint firstAttribute="trailing" secondItem="V3d-IB-N0u" secondAttribute="trailing" id="cXe-xD-QsO"/>
-                            <constraint firstItem="V3d-IB-N0u" firstAttribute="top" secondItem="ggX-ws-16Y" secondAttribute="bottom" id="iPn-uf-CWh"/>
-                            <constraint firstItem="CJw-Fe-Hva" firstAttribute="top" secondItem="V3d-IB-N0u" secondAttribute="bottom" id="mhF-OQ-jRg"/>
+                            <constraint firstAttribute="trailing" secondItem="mZ6-fz-WbF" secondAttribute="trailing" constant="266" id="BQY-UR-aoX"/>
+                            <constraint firstItem="mZ6-fz-WbF" firstAttribute="top" secondItem="P2s-aG-DgJ" secondAttribute="bottom" constant="25" id="Dqr-8h-pz5"/>
+                            <constraint firstItem="FJN-fK-658" firstAttribute="top" secondItem="ggX-ws-16Y" secondAttribute="bottom" constant="30" id="Klt-J0-S0l"/>
+                            <constraint firstItem="mZ6-fz-WbF" firstAttribute="leading" secondItem="np0-9o-Bsc" secondAttribute="leading" constant="266" id="PLa-86-v4u"/>
+                            <constraint firstItem="CJw-Fe-Hva" firstAttribute="top" secondItem="mZ6-fz-WbF" secondAttribute="bottom" constant="40" id="Sdc-PL-tsf"/>
+                            <constraint firstAttribute="trailing" secondItem="FJN-fK-658" secondAttribute="trailing" constant="20" id="Vdl-qn-XU8"/>
+                            <constraint firstItem="FJN-fK-658" firstAttribute="leading" secondItem="np0-9o-Bsc" secondAttribute="leading" constant="20" id="beo-9f-oZJ"/>
+                            <constraint firstAttribute="trailing" secondItem="P2s-aG-DgJ" secondAttribute="trailing" constant="173" id="ctV-i8-X8D"/>
+                            <constraint firstItem="P2s-aG-DgJ" firstAttribute="leading" secondItem="np0-9o-Bsc" secondAttribute="leading" constant="174" id="pqh-cp-nbU"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="backgroundImageView" destination="V3d-IB-N0u" id="0rg-SP-maa"/>
-                    </connections>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nv-Rw-alC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,6 +198,7 @@
     </scenes>
     <resources>
         <image name="blueBackground" width="512" height="384"/>
+        <image name="cameraImage" width="64" height="64"/>
         <image name="castleBackground" width="568" height="470"/>
         <image name="cityBackground" width="568" height="470"/>
         <image name="funBackground" width="568" height="470"/>

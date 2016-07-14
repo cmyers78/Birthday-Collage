@@ -13,17 +13,14 @@ class CameraViewController: UIViewController {
     var receivedImage : UIImage?
     
     
-    @IBOutlet weak var backgroundImageView: UIImageView!
+
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let theImage = self.receivedImage {
-            
-            self.backgroundImageView.image = theImage
-        }
+        
     
     }
 }
