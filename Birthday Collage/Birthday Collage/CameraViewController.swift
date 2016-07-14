@@ -22,6 +22,7 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.chooseImage.delegate = self
     }
 
