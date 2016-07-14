@@ -17,34 +17,48 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    @IBAction func blueBackgroundTapped(sender: UIButton) {
-        
-        
-        self.backgroundImage = UIImage(named: "blueBackground")
+    
+    func sendImage(imageName : String) {
+        self.backgroundImage = UIImage(named: imageName)
         
         performSegueWithIdentifier("backgroundSegue", sender: nil)
+    
+    }
+
+    @IBAction func blueBackgroundTapped(sender: UIButton) {
+        self.sendImage("blueBackground")
     }
     
     @IBAction func greenBackgroundTapped(sender: UIButton) {
+        self.sendImage("greenBackground")
     }
     
     @IBAction func redBackgroundTapped(sender: UIButton) {
+        self.sendImage("redBackground")
     }
     
     @IBAction func castleBackgroundTapped(sender: UIButton) {
+        self.sendImage("castleBackground")
     }
     
     @IBAction func cityBackgroundTapped(sender: UIButton) {
+        self.sendImage("cityBackground")
     }
     
     @IBAction func funBackgroundTapped(sender: UIButton) {
+        self.sendImage("funBackground")
     }
 
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        <#code#>
+        if segue.identifier == "backgroundSegue" {
+            
+            if let controller = segue.destinationViewController as? CameraViewController {
+                
+                controller.receivedImage = self.backgroundImage
+            }
+        }
     }
 }
 
