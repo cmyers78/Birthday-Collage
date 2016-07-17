@@ -65,6 +65,13 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+        if segue.identifier == "collageSegue" {
+            
+            if let collageController = segue.destinationViewController as? CollageViewController {
+                
+                collageController.receivedBackground = self.receivedImage
+                collageController.receivedSelfie = self.theImage
+            }
+        }
     }
 }

@@ -166,7 +166,6 @@
                                 </state>
                                 <connections>
                                     <action selector="continueButtonTapped:" destination="DeK-bt-L5X" eventType="touchUpInside" id="nca-Pd-Tnn"/>
-                                    <segue destination="KBf-Zj-FJh" kind="show" identifier="collageSegue" id="zej-Bk-euH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -191,6 +190,7 @@
                     <connections>
                         <outlet property="cameraImageView" destination="P2s-aG-DgJ" id="kCF-3H-mg9"/>
                         <outlet property="clickContinueButtonOutlet" destination="kMR-f2-OCP" id="kYJ-hx-ARJ"/>
+                        <segue destination="KBf-Zj-FJh" kind="show" identifier="collageSegue" id="FKL-pz-jyX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nv-Rw-alC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -212,15 +212,74 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="va9-wk-HHi">
                                 <rect key="frame" x="0.0" y="20" width="600" height="536"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="blc-ly-jwM">
+                                <rect key="frame" x="230" y="210" width="160" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="kYx-pu-tV4"/>
+                                    <constraint firstAttribute="height" constant="180" id="nJx-7L-62t"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Birthday Lily!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ife-7l-Byb">
+                                <rect key="frame" x="20" y="70" width="560" height="31"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVO-yd-5T7">
+                                <rect key="frame" x="30" y="468" width="50" height="38"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playTapped:" destination="KBf-Zj-FJh" eventType="touchUpInside" id="REX-eu-DrG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjZ-ml-rNO">
+                                <rect key="frame" x="268" y="472" width="64" height="38"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseTapped:" destination="KBf-Zj-FJh" eventType="touchUpInside" id="1OS-Eh-xpl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC7-BB-ANM">
+                                <rect key="frame" x="524" y="468" width="46" height="38"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopTapped:" destination="KBf-Zj-FJh" eventType="touchUpInside" id="Ykh-Ir-Yr2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fC7-BB-ANM" secondAttribute="trailing" constant="30" id="8Go-a7-xx6"/>
                             <constraint firstItem="va9-wk-HHi" firstAttribute="leading" secondItem="cA2-Ia-JId" secondAttribute="leading" id="8Lz-3M-Mfr"/>
+                            <constraint firstItem="tVO-yd-5T7" firstAttribute="leading" secondItem="cA2-Ia-JId" secondAttribute="leading" constant="30" id="KOZ-EV-HEc"/>
+                            <constraint firstAttribute="trailing" secondItem="Ife-7l-Byb" secondAttribute="trailing" constant="20" id="Lna-P6-3Z0"/>
+                            <constraint firstItem="OhQ-PE-MjC" firstAttribute="top" secondItem="tVO-yd-5T7" secondAttribute="bottom" constant="50" id="R4u-9T-5bq"/>
+                            <constraint firstItem="EjZ-ml-rNO" firstAttribute="centerX" secondItem="cA2-Ia-JId" secondAttribute="centerX" id="Vzn-FO-llc"/>
+                            <constraint firstItem="blc-ly-jwM" firstAttribute="centerY" secondItem="cA2-Ia-JId" secondAttribute="centerY" id="WEL-WL-QFn"/>
+                            <constraint firstItem="Ife-7l-Byb" firstAttribute="leading" secondItem="cA2-Ia-JId" secondAttribute="leading" constant="20" id="Xdc-99-Kgi"/>
+                            <constraint firstItem="Ife-7l-Byb" firstAttribute="top" secondItem="eMo-z6-LqK" secondAttribute="bottom" constant="50" id="b1c-vv-cAV"/>
                             <constraint firstItem="OhQ-PE-MjC" firstAttribute="top" secondItem="va9-wk-HHi" secondAttribute="bottom" id="hZc-hK-QpK"/>
+                            <constraint firstItem="EjZ-ml-rNO" firstAttribute="top" secondItem="blc-ly-jwM" secondAttribute="bottom" constant="82" id="l22-fe-pKk"/>
                             <constraint firstAttribute="trailing" secondItem="va9-wk-HHi" secondAttribute="trailing" id="mpq-zt-kLn"/>
                             <constraint firstItem="va9-wk-HHi" firstAttribute="top" secondItem="eMo-z6-LqK" secondAttribute="bottom" id="pTE-jI-4kq"/>
+                            <constraint firstItem="OhQ-PE-MjC" firstAttribute="top" secondItem="fC7-BB-ANM" secondAttribute="bottom" constant="50" id="uR1-bP-g3V"/>
+                            <constraint firstItem="blc-ly-jwM" firstAttribute="centerX" secondItem="cA2-Ia-JId" secondAttribute="centerX" constant="10" id="uaU-Nc-j6c"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="va9-wk-HHi" id="p9W-uw-Rwq"/>
+                        <outlet property="selfieImageView" destination="blc-ly-jwM" id="5wP-b0-OXB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTR-Ax-230" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
