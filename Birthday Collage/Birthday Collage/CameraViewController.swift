@@ -12,6 +12,8 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
     
     var receivedImage : UIImage?
     
+    var theImage : UIImage?
+    
     @IBOutlet weak var clickContinueButtonOutlet: UIButton!
     
     // Creating a UIImagePickerController Instance
@@ -28,7 +30,7 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
 
     @IBAction func continueButtonTapped(sender: UIButton) {
         
-        
+        performSegueWithIdentifier("collageSegue", sender: nil)
         
         
     }
@@ -52,11 +54,17 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
         if let pickedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
             self.cameraImageView.contentMode = .ScaleAspectFill
             self.cameraImageView.image = pickedImage
+            self.theImage = pickedImage
         }
         
         dismissViewControllerAnimated(true, completion: nil)
+
         
         self.clickContinueButtonOutlet.hidden = false
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
     }
 }
