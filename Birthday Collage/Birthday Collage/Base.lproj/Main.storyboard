@@ -235,16 +235,6 @@
                                     <action selector="playTapped:" destination="KBf-Zj-FJh" eventType="touchUpInside" id="REX-eu-DrG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjZ-ml-rNO">
-                                <rect key="frame" x="268" y="472" width="64" height="38"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
-                                <state key="normal" title="Pause">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pauseTapped:" destination="KBf-Zj-FJh" eventType="touchUpInside" id="1OS-Eh-xpl"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC7-BB-ANM">
                                 <rect key="frame" x="524" y="468" width="46" height="38"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
@@ -263,12 +253,10 @@
                             <constraint firstItem="tVO-yd-5T7" firstAttribute="leading" secondItem="cA2-Ia-JId" secondAttribute="leading" constant="30" id="KOZ-EV-HEc"/>
                             <constraint firstAttribute="trailing" secondItem="Ife-7l-Byb" secondAttribute="trailing" constant="20" id="Lna-P6-3Z0"/>
                             <constraint firstItem="OhQ-PE-MjC" firstAttribute="top" secondItem="tVO-yd-5T7" secondAttribute="bottom" constant="50" id="R4u-9T-5bq"/>
-                            <constraint firstItem="EjZ-ml-rNO" firstAttribute="centerX" secondItem="cA2-Ia-JId" secondAttribute="centerX" id="Vzn-FO-llc"/>
                             <constraint firstItem="blc-ly-jwM" firstAttribute="centerY" secondItem="cA2-Ia-JId" secondAttribute="centerY" id="WEL-WL-QFn"/>
                             <constraint firstItem="Ife-7l-Byb" firstAttribute="leading" secondItem="cA2-Ia-JId" secondAttribute="leading" constant="20" id="Xdc-99-Kgi"/>
                             <constraint firstItem="Ife-7l-Byb" firstAttribute="top" secondItem="eMo-z6-LqK" secondAttribute="bottom" constant="50" id="b1c-vv-cAV"/>
                             <constraint firstItem="OhQ-PE-MjC" firstAttribute="top" secondItem="va9-wk-HHi" secondAttribute="bottom" id="hZc-hK-QpK"/>
-                            <constraint firstItem="EjZ-ml-rNO" firstAttribute="top" secondItem="blc-ly-jwM" secondAttribute="bottom" constant="82" id="l22-fe-pKk"/>
                             <constraint firstAttribute="trailing" secondItem="va9-wk-HHi" secondAttribute="trailing" id="mpq-zt-kLn"/>
                             <constraint firstItem="va9-wk-HHi" firstAttribute="top" secondItem="eMo-z6-LqK" secondAttribute="bottom" id="pTE-jI-4kq"/>
                             <constraint firstItem="OhQ-PE-MjC" firstAttribute="top" secondItem="fC7-BB-ANM" secondAttribute="bottom" constant="50" id="uR1-bP-g3V"/>

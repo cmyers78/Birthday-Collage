@@ -67,9 +67,7 @@ class CollageViewController: UIViewController {
         self.hBD?.play()
     }
 
-    @IBAction func pauseTapped(sender: UIButton) {
-        self.hBD?.pause()
-    }
+
     
     @IBAction func stopTapped(sender: UIButton) {
         self.hBD?.stop()
